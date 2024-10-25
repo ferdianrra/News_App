@@ -70,4 +70,5 @@ dependencies {
 
     testImplementation (libs.mockito.core)
     testImplementation (libs.mockito.inline)
+    debugImplementation (libs.leakcanary.android)
 }

@@ -53,4 +53,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("com.google.dagger:dagger:2.47")
     kapt ("com.google.dagger:dagger-compiler:2.47")
+    debugImplementation (libs.leakcanary.android)
 }

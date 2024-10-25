@@ -32,7 +32,6 @@ import com.dicoding.newsapp.ui.home.navigation.Screen
 import com.dicoding.newsapp.ui.theme.NewsAppTheme
 import com.dicoding.newsapp.utils.FavoriteScreen
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun NewsApp(
     modifier: Modifier = Modifier,
@@ -102,7 +101,6 @@ fun AppBar(
 
 
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Preview (showBackground = true)
 @Composable
 private fun PreviewNewsApp() {
