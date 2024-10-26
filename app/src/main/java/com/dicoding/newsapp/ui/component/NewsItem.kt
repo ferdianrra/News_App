@@ -28,7 +28,6 @@ import com.dicoding.newsapp.R
 import com.dicoding.newsapp.core.utils.FormatDate
 import com.dicoding.newsapp.ui.theme.NewsAppTheme
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun NewsItem(
     imageUrl: String,

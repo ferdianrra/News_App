@@ -8,7 +8,6 @@ import com.google.firebase.crashlytics.buildtools.reloc.javax.annotation.Nonnull
 @Entity(tableName = "news")
 data class NewsEntitiy(
     @PrimaryKey
-    @Nonnull
     @ColumnInfo(name = "title")
     var title: String,
 

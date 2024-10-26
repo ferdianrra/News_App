@@ -60,7 +60,6 @@ import com.dicoding.newsapp.ui.theme.NewsAppTheme
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun DetailScreen(
     modifier: Modifier = Modifier,
@@ -125,7 +124,6 @@ fun DetailScreen(
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun DetailContent(
     modifier: Modifier = Modifier,
@@ -248,7 +246,6 @@ fun FavoriteFloatingActionButton(
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Preview(showBackground = true)
 @Composable
 private fun PreviewDetailContent() {

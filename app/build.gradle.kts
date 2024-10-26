@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         applicationId = "com.dicoding.newsapp"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -85,5 +85,6 @@ dependencies {
     // import dagger-hilt
     implementation ("com.google.dagger:dagger:2.47")
     kapt ("com.google.dagger:dagger-compiler:2.47")
+    debugImplementation (libs.leakcanary.android)
 
 }

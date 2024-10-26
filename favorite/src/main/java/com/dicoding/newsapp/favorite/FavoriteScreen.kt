@@ -41,7 +41,6 @@ import com.dicoding.newsapp.ui.home.HomeViewModel
 import kotlinx.coroutines.launch
 
 
-@RequiresApi(Build.VERSION_CODES.O)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun FavoriteScreen(
@@ -86,7 +85,6 @@ fun FavoriteScreen(
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun FavoriteContent(
     modifier: Modifier = Modifier,

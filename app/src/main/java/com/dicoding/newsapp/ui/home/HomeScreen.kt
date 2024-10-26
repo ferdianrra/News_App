@@ -2,7 +2,6 @@
 
 package com.dicoding.newsapp.ui.home
 
-import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.clickable
@@ -25,7 +24,6 @@ import com.dicoding.newsapp.ui.component.ShowError
 import com.dicoding.newsapp.ui.component.ShowLoading
 import kotlinx.coroutines.launch
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
@@ -58,7 +56,6 @@ fun HomeScreen(
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun HomeContent(
     modifier: Modifier = Modifier,
