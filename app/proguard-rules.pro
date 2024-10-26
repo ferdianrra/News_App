@@ -19,3 +19,30 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# Untuk Compose
+-keep class androidx.compose.** { *; }
+-keep class androidx.lifecycle.** { *; }
+-keep class kotlin.Metadata { *; }
+-keep class kotlin.** { *; }
+-dontwarn kotlin.**
+
+# Keep Dagger-generated classes and interfaces
+-keep class dagger.** { *; }
+-keep class javax.inject.** { *; }
+-keep,allowobfuscation interface <1>
+-dontwarn kotlinx.**
+-keep class kotlinx.coroutines.** { *; }
+
+# Preserve Dagger annotations
+-keepattributes *Annotation*
+
+-keep class * extends dagger.internal.Factory
+-keep class * implements dagger.Component
+-keep class * implements dagger.Module
+-keep class * implements dagger.Subcomponent
+-keep class * implements dagger.Binds
+
+-keep class com.dicoding.newsapp.favorite.** { *; }
+
+# Tambahan untuk material3
+-keep class androidx.compose.material3.** { *; }

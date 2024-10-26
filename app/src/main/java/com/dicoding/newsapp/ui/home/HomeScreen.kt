@@ -2,8 +2,6 @@
 
 package com.dicoding.newsapp.ui.home
 
-import android.util.Log
-import androidx.annotation.RequiresApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -78,7 +76,6 @@ fun HomeContent(
         }
         items(filteredList) { data ->
             val title = data.title.toString()
-            Log.e("HomeScreen", title)
             NewsItem(
                 imageUrl = data.imageUrl.toString(),
                 title = title,
