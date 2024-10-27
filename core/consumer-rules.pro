@@ -82,3 +82,51 @@
 -keep class * implements dagger.Module
 -keep class * implements dagger.Subcomponent
 -keep class * implements dagger.Binds
+
+
+-keep class com.dicoding.newsapp.core.domain.repository.INewsRepository { *; }
+-keep class com.dicoding.newsapp.core.domain.model.News { *; }
+-keep class com.dicoding.newsapp.core.data.NewsRepository { *; }
+-keep class com.dicoding.newsapp.core.domain.** { *; }
+-keep class com.dicoding.newsapp.core.data.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class retrofit2.** { *; }
+-keep class okhttp3.** { *; }
+
+# Untuk menjaga kelas Resource dan subkelasnya
+-keep class com.dicoding.newsapp.core.data.Resource { *; }
+-keep class com.dicoding.newsapp.core.data.Resource$Error { *; }
+-keep class com.dicoding.newsapp.core.data.Resource$Loading { *; }
+-keep class com.dicoding.newsapp.core.data.Resource$Success { *; }
+
+# Untuk menjaga kelas-kelas dari CoreComponent dan Dagger
+-keep class com.dicoding.newsapp.core.di.CoreComponent { *; }
+-keep class com.dicoding.newsapp.core.di.DaggerCoreComponent { *; }
+-keep class com.dicoding.newsapp.core.di.CoreComponent$Factory { *; }
+
+# Untuk menjaga model dan use case
+-keep class com.dicoding.newsapp.core.domain.model.News { *; }
+-keep class com.dicoding.newsapp.core.domain.repository.INewsRepository { *; }
+-keep class com.dicoding.newsapp.core.domain.usecase.NewsInteractor { *; }
+-keep class com.dicoding.newsapp.core.domain.usecase.NewsUseCase { *; }
+-keep class com.dicoding.newsapp.core.domain.usecase.NewsInteractor_Factory { *; }
+
+
+# Untuk menjaga kelas ViewModelFactory
+-keep class com.dicoding.newsapp.core.ui.ViewModelFactory { *; }
+
+# Untuk menjaga utilitas
+-keep class com.dicoding.newsapp.core.utils.FormatDate { *; }
+
+
+-keep class org.mockito.** { *; }
+-keep class org.junit.** { *; }
+-dontwarn org.mockito.**
+-dontwarn org.junit.**
+
+-keep class dagger.** { *; }
+-keep class javax.inject.** { *; }
+-keep,allowobfuscation interface <1>
+-dontwarn kotlinx.**
+-keep class kotlinx.coroutines.** { *; }

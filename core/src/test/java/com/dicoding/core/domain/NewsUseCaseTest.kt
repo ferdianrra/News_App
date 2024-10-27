@@ -44,7 +44,6 @@ class NewsUseCaseTest {
 
     @Test
     fun `should get news from repository`() = runBlocking {
-        val title = "title 1"
         val result = newsUseCase.getNews()
 
         result.collect { resource ->
