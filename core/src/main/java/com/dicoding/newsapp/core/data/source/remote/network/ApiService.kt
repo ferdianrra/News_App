@@ -10,7 +10,4 @@ interface ApiService {
         @Query("q") q:String
     ): ListNewsResponse
 
-    suspend fun getListByTitle(
-        @Query("q") q:String
-    ): ListNewsResponse
 }
