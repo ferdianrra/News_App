@@ -1,9 +1,7 @@
 package com.dicoding.newsapp.favorite
 
 import android.annotation.SuppressLint
-import android.os.Build
 import android.util.Log
-import androidx.annotation.RequiresApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -37,7 +35,6 @@ import com.dicoding.newsapp.ui.common.UiState
 import com.dicoding.newsapp.ui.component.NewsItem
 import com.dicoding.newsapp.ui.component.ShowError
 import com.dicoding.newsapp.ui.component.ShowLoading
-import com.dicoding.newsapp.ui.home.HomeViewModel
 import kotlinx.coroutines.launch
 
 

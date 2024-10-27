@@ -3,7 +3,6 @@ package com.dicoding.newsapp.core.data.source.local.entity
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.google.firebase.crashlytics.buildtools.reloc.javax.annotation.Nonnull
 
 @Entity(tableName = "news")
 data class NewsEntitiy(

@@ -1,7 +1,5 @@
 package com.dicoding.newsapp.core.utils
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 

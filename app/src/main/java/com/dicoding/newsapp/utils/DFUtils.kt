@@ -1,6 +1,5 @@
 package com.dicoding.newsapp.utils
 
-import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.currentComposer
 import androidx.compose.ui.Modifier
@@ -21,10 +20,7 @@ object DFUtils {
             val method = findMethod(dynamicClass, methodName)
             if (method != null) {
                 val isMethodInvoke = invokeMethod(method = method, objek = instanceObject, modifier, navigateBack, navigateToDetail, composer, 0,0)
-                if (!isMethodInvoke) {
-                    return false
-                }
-                return true
+                return isMethodInvoke
             } else {
                 return false
             }

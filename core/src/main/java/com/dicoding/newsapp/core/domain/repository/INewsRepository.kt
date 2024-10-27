@@ -1,7 +1,6 @@
 package com.dicoding.newsapp.core.domain.repository
 
 import com.dicoding.newsapp.core.data.Resource
-import com.dicoding.newsapp.core.data.source.remote.network.ApiResponse
 import com.dicoding.newsapp.core.domain.model.News
 import kotlinx.coroutines.flow.Flow
 

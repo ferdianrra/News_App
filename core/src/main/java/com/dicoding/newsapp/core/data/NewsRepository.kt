@@ -1,17 +1,14 @@
 package com.dicoding.newsapp.core.data
 
-import android.util.Log
 import com.dicoding.newsapp.core.data.source.local.LocalDataSource
 import com.dicoding.newsapp.core.data.source.remote.RemoteDataSource
 import com.dicoding.newsapp.core.data.source.remote.network.ApiResponse
 import com.dicoding.newsapp.core.domain.model.News
 import com.dicoding.newsapp.core.domain.repository.INewsRepository
-import com.dicoding.newsapp.core.utils.AppExecutors
 import com.dicoding.newsapp.core.utils.DataMapper
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
-
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -19,8 +16,7 @@ import javax.inject.Singleton
 @Singleton
 class NewsRepository @Inject constructor(
     private val localDataSource: LocalDataSource,
-    private val remoteDataSource: RemoteDataSource,
-    private val appExecutors: AppExecutors
+    private val remoteDataSource: RemoteDataSource
 ): INewsRepository {
     private var newsList = listOf<News>()
     private var favNewsList = listOf<News>()

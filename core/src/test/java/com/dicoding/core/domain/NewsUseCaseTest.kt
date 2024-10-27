@@ -1,6 +1,5 @@
 package com.dicoding.core.domain
 
-import com.dicoding.newsapp.core.data.NewsRepository
 import com.dicoding.newsapp.core.data.Resource
 import com.dicoding.newsapp.core.domain.model.News
 import com.dicoding.newsapp.core.domain.repository.INewsRepository

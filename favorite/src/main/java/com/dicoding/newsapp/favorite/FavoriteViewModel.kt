@@ -1,6 +1,5 @@
 package com.dicoding.newsapp.favorite
 
-import androidx.compose.ui.input.key.Key.Companion.D
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dicoding.newsapp.core.data.Resource

@@ -2,7 +2,6 @@ package com.dicoding.newsapp.core.utils
 
 import android.os.Handler
 import android.os.Looper
-import androidx.annotation.MainThread
 import androidx.annotation.VisibleForTesting
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors

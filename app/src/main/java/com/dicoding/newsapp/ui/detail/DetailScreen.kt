@@ -1,10 +1,7 @@
 package com.dicoding.newsapp.ui.detail
 
 import android.annotation.SuppressLint
-import android.net.Uri
-import android.os.Build
 import android.util.Log
-import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,14 +10,12 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -31,12 +26,9 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.drawscope.inset
-import androidx.compose.ui.input.key.Key.Companion.D
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
@@ -52,10 +44,8 @@ import com.dicoding.newsapp.R
 import com.dicoding.newsapp.core.domain.model.News
 import com.dicoding.newsapp.core.utils.FormatDate
 import com.dicoding.newsapp.ui.common.UiState
-import com.dicoding.newsapp.ui.component.NewsItem
 import com.dicoding.newsapp.ui.component.ShowError
 import com.dicoding.newsapp.ui.component.ShowLoading
-import com.dicoding.newsapp.ui.home.HomeViewModel
 import com.dicoding.newsapp.ui.theme.NewsAppTheme
 import kotlinx.coroutines.launch
 
@@ -135,8 +125,7 @@ fun DetailContent(
     description: String
 ) {
     val formatDate = FormatDate.formatDate(date)
-    Column(
-    ) {
+    Column {
         val colorStops = arrayOf(
             0.005f to Color.Black,
             0.4f to Color.Transparent,

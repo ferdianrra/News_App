@@ -1,6 +1,5 @@
 package com.dicoding.newsapp.ui.detail
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.dicoding.newsapp.core.data.Resource
 import com.dicoding.newsapp.core.domain.model.News
