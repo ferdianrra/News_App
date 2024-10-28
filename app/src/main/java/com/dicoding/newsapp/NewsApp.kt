@@ -68,9 +68,7 @@ fun NewsApp(
             ) {
                 val title = it.arguments?.getString("title")
                 Log.e("NewsApp", title.toString())
-                DetailScreen(title = title.toString(), navigateBack = {
-                    navController.navigateUp()
-                })
+                DetailScreen(title = title.toString())
             }
         }
 

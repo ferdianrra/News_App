@@ -53,8 +53,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun DetailScreen(
     modifier: Modifier = Modifier,
-    title: String,
-    navigateBack:() -> Unit
+    title: String
 ) {
     Log.e("DetailScreen", title)
     val context = LocalContext.current

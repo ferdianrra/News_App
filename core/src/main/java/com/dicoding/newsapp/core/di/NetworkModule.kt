@@ -13,8 +13,8 @@ import java.util.concurrent.TimeUnit
 
 @Module
 class NetworkModule {
-    val hostname = "newsapi.org"
-    val certificatePinner = CertificatePinner.Builder()
+    private val hostname = "newsapi.org"
+    private val certificatePinner = CertificatePinner.Builder()
         .add(hostname, "sha256/p/RZhoZj/bpjprMDMoNVQ04tZgIX0kd39gI9NxT6w8k=")
         .add(hostname, "sha256/o3acJR7JExJvqoEhsElholZyQx4woNrA5d3b3DDQgh8=")
         .add(hostname, "sha256/kIdp6NNEd8wsugYyyIYFsi1ylMCED3hZbSR8ZFsa/A4=")
